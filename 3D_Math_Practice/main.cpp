@@ -9,6 +9,7 @@ int main()
 	CharacterMovementExample();
 	FindMovementVectorExample();
 	FindVectorMagnitudeExample();
+	FindLongerVectorExample();
 
 
 

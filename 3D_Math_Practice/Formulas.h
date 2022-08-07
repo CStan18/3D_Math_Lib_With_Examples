@@ -9,6 +9,9 @@ public:
 	// Find length of vector called on
 	// Cannot change vector
 	float FindVectorMagnitude() const;
+
+	bool IsEqual(Vector otherVector);
+
 };
 
 // 3D point
@@ -23,3 +26,6 @@ public:
 
 // Finds vector between points
 Vector FindMovementVector(Point startPoint, Point endPoint);
+
+Vector CompareFindLongerVect(Vector vector1, Vector vector2);
+Vector CompareFindShorterVect(Vector vector1, Vector vector2);
