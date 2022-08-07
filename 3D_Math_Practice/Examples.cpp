@@ -136,5 +136,35 @@ void FindLongerVectorExample()
 
 void FindShorterVectorExample()
 {
+	std::cout << "\nExample 5: Comparing 2 vectors, find shortest\n";
 
+	Vector shortestVector;
+	Vector vector1 = InitVector();
+	Vector vector2 = InitVector();
+
+	std::cout << "   Vector 1:   (";
+	PrintVector(vector1);
+
+	std::cout << "   Vector 1 mag: " << vector1.FindVectorMagnitude()
+		<< "\n";
+	std::cout << "   Vector 2:   (";
+	PrintVector(vector2);
+
+	std::cout << "   Vector 2 mag: " << vector2.FindVectorMagnitude()
+		<< "\n";
+
+	shortestVector = CompareFindShorterVect(vector1, vector2);
+
+	if (vector1.IsEqual(vector2))
+	{
+		std::cout << "Vectors are equal\n";
+	}
+	else if (shortestVector.IsEqual(vector1))
+	{
+		std::cout << "Vector 1 has less magnitude\n";
+	}
+	else
+	{
+		std::cout << "Vector 2 has less magnitude\n";
+	}
 }

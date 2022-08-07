@@ -10,5 +10,6 @@ int main()
 	FindMovementVectorExample();
 	FindVectorMagnitudeExample();
 	FindLongerVectorExample();
+	FindShorterVectorExample();
 
 }
