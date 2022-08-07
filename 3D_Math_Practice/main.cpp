@@ -4,8 +4,10 @@
 
 int main()
 {
+	// Seeds random num generators with current time
 	std::srand(time(0));
 
+	// Prints out examples
 	CharacterMovementExample();
 	FindMovementVectorExample();
 	FindVectorMagnitudeExample();
