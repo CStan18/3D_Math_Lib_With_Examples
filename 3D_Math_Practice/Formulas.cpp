@@ -2,6 +2,7 @@
 #include "math.h"
 #include <iostream>
 
+// Prints point
 void PrintPoint(Point point)
 {
 	std::cout << point.x
@@ -12,6 +13,7 @@ void PrintPoint(Point point)
 		<< ")\n";
 }
 
+// Prints vector
 void PrintVector(Vector vector)
 {
 	std::cout << vector.x
@@ -78,6 +80,7 @@ float Vector::FindVectorMagnitude() const
 	return length;
 }
 
+// Compares vectors, returns true if they are equivalent
 bool Vector::IsEqual(Vector otherVector)
 {
 	if (this->x == otherVector.x &&
