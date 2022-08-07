@@ -1,1 +1,2 @@
-# 3D_Math_Practice
+# 3D_Math_Lib WIP
+Formulas and examples
