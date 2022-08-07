@@ -1,7 +1,6 @@
 #include <iostream>
-#include "Vector.h"
-#include "Point.h"
 #include "Examples.h"
+#include "Formulas.h"
 
 int main()
 {

@@ -1,20 +1,19 @@
 #include <iostream>
 #include "Examples.h"
-#include "Vector.h"
-#include "Point.h"
+#include "Formulas.h"
 
 
 
 void CharacterMovementExample()
 {
 	// p(6, 42, 19)
-	Point startPoint;
+	Point startPoint{};
 	startPoint.x = std::rand() % 10;
 	startPoint.y = std::rand() % 10;
 	startPoint.z = std::rand() % 10;
 
 	// v(14, 23, 0)
-	Vector movementVector;
+	Vector movementVector{};
 	movementVector.x = std::rand() % 10;
 	movementVector.y = std::rand() % 10;
 	movementVector.z = std::rand() % 10;
@@ -52,17 +51,17 @@ void CharacterMovementExample()
 void FindVectorNeededExample()
 {
 	
-	Point startPoint;
+	Point startPoint{};
 	startPoint.x = std::rand() % 10;
 	startPoint.y = std::rand() % 10;
 	startPoint.z = std::rand() % 10;
 
-	Point endPoint;
+	Point endPoint{};
 	endPoint.x = std::rand() % 10;
 	endPoint.y = std::rand() % 10;
 	endPoint.z = std::rand() % 10;
 
-	Vector movementVector;
+	Vector movementVector{};
 	movementVector.x = endPoint.x - startPoint.x;
 	movementVector.y = endPoint.y - startPoint.y;
 	movementVector.z = endPoint.z - startPoint.z;
