@@ -11,3 +11,13 @@ Point Point::AddVector(Vector v)
 
 	return destinationPoint;
 }
+
+Vector Point::FindMovementVector(Point startPoint, Point endPoint)
+{
+	Vector movementVector;
+	movementVector.x = endPoint.x - startPoint.x;
+	movementVector.y = endPoint.y - startPoint.y;
+	movementVector.z = endPoint.z - startPoint.z;
+
+	return Vector();
+}

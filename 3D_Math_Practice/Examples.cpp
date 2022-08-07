@@ -8,29 +8,29 @@
 void CharacterMovementExample()
 {
 	// p(6, 42, 19)
-	Point startingPoint;
-	startingPoint.x = 6;
-	startingPoint.y = 42;
-	startingPoint.z = 19;
+	Point startPoint;
+	startPoint.x = std::rand() % 10;
+	startPoint.y = std::rand() % 10;
+	startPoint.z = std::rand() % 10;
 
 	// v(14, 23, 0)
 	Vector movementVector;
-	movementVector.x = 14;
-	movementVector.y = 23;
-	movementVector.z = 0;
+	movementVector.x = std::rand() % 10;
+	movementVector.y = std::rand() % 10;
+	movementVector.z = std::rand() % 10;
 
-	Point destinationPoint = startingPoint.AddVector(movementVector);
+	Point endPoint = startPoint.AddVector(movementVector);
 
 	std::cout << "Example 1: Basic Movement\n";
-	std::cout << "Starting point:    ("
-		<< startingPoint.x
+	std::cout << "   Starting point:    ("
+		<< startPoint.x
 		<< ", "
-		<< startingPoint.y
+		<< startPoint.y
 		<< ", "
-		<< startingPoint.z
+		<< startPoint.z
 		<< ")\n";
 
-	std::cout << "Movement vector:   ("
+	std::cout << " + Movement vector:   ("
 		<< movementVector.x
 		<< ", "
 		<< movementVector.y
@@ -38,13 +38,62 @@ void CharacterMovementExample()
 		<< movementVector.z
 		<< ")\n";
 
-	std::cout << "------------------------------\n";
+	std::cout << "--------------------------------\n";
 
-	std::cout << "Destination point: ("
-		<< destinationPoint.x
+	std::cout << "   End point:         ("
+		<< endPoint.x
 		<< ", "
-		<< destinationPoint.y
+		<< endPoint.y
 		<< ", "
-		<< destinationPoint.z
+		<< endPoint.z
 		<< ")\n";
+}
+
+void FindVectorNeededExample()
+{
+	
+	Point startPoint;
+	startPoint.x = std::rand() % 10;
+	startPoint.y = std::rand() % 10;
+	startPoint.z = std::rand() % 10;
+
+	Point endPoint;
+	endPoint.x = std::rand() % 10;
+	endPoint.y = std::rand() % 10;
+	endPoint.z = std::rand() % 10;
+
+	Vector movementVector;
+	movementVector.x = endPoint.x - startPoint.x;
+	movementVector.y = endPoint.y - startPoint.y;
+	movementVector.z = endPoint.z - startPoint.z;
+
+	std::cout << "\nExample 2: Find Vector Between Points\n";
+
+	std::cout << "   End point:         ("
+		<< endPoint.x
+		<< ", "
+		<< endPoint.y
+		<< ", "
+		<< endPoint.z
+		<< ")\n";
+
+	std::cout << " - Starting point:    ("
+		<< startPoint.x
+		<< ", "
+		<< startPoint.y
+		<< ", "
+		<< startPoint.z
+		<< ")\n";
+
+	std::cout << "--------------------------------\n";
+
+	std::cout << "   Movement vector:   ("
+		<< movementVector.x
+		<< ", "
+		<< movementVector.y
+		<< ", "
+		<< movementVector.z
+		<< ")\n";
+
+
 }

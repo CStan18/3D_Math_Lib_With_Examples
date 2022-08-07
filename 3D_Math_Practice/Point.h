@@ -6,6 +6,7 @@ class Point
 {
 public:
 	Point AddVector(Vector v);
+	Vector FindMovementVector(Point startPoint, Point endPoint);
 
 	float x, y, z;
 };
