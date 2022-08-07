@@ -7,7 +7,8 @@ int main()
 	std::srand(time(0));
 
 	CharacterMovementExample();
-	FindVectorNeededExample();
+	FindMovementVectorExample();
+	FindVectorMagnitudeExample();
 
 
 

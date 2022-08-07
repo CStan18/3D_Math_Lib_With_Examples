@@ -1,4 +1,5 @@
 #include "Formulas.h"
+#include "math.h"
 
 // Vector addition
 // Adds vector to point
@@ -27,3 +28,11 @@ Vector FindMovementVector(Point startPoint, Point endPoint)
 	return Vector();
 }
 
+float Vector::FindVectorMagnitude() const
+{
+	float length;
+
+	length = sqrt(x * x + y * y + z * z);
+	
+	return length;
+}

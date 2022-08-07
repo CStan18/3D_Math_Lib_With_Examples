@@ -6,6 +6,9 @@ class Vector
 public:
 	float x, y, z;
 
+	// Find length of vector called on
+	// Cannot change vector
+	float FindVectorMagnitude() const;
 };
 
 // 3D point

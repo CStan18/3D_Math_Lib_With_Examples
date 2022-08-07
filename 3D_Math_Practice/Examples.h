@@ -1,4 +1,5 @@
 #pragma once
 
 void CharacterMovementExample();
-void FindVectorNeededExample();
+void FindMovementVectorExample();
+void FindVectorMagnitudeExample();
