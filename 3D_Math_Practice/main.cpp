@@ -11,6 +11,4 @@ int main()
 	FindVectorMagnitudeExample();
 	FindLongerVectorExample();
 
-
-
 }

@@ -22,7 +22,13 @@ public:
 
 	// Add vector to point, returns vector to end point
 	Point AddVector(Vector v);
+
 };
+
+void PrintPoint(Point point);
+void PrintVector(Vector vector);
+Point InitPoint();
+Vector InitVector();
 
 // Finds vector between points
 Vector FindMovementVector(Point startPoint, Point endPoint);

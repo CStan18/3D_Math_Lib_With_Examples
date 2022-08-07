@@ -2,28 +2,6 @@
 #include "Examples.h"
 #include "Formulas.h"
 
-
-
-
-
-Point InitPoint()
-{
-	Point point{};
-	point.x = std::rand() % 10;
-	point.y = std::rand() % 10;
-	point.z = std::rand() % 10;
-	return point;
-}
-
-Vector InitVector()
-{
-	Vector vector{};
-	vector.x = std::rand() % 10;
-	vector.y = std::rand() % 10;
-	vector.z = std::rand() % 10;
-	return vector;
-}
-
 void CharacterMovementExample()
 {
 	// Init point and vector
@@ -76,36 +54,22 @@ void FindMovementVectorExample()
 
 	// Calculate vector
 	Vector movementVector{};
-	movementVector = InitVector();
+	movementVector = FindMovementVector(startPoint, endPoint);
 
 	// Print equation
 	std::cout << "\nExample 2: Find Vector Between Points\n";
 
-	std::cout << "   End point:         ("
-		<< endPoint.x
-		<< ", "
-		<< endPoint.y
-		<< ", "
-		<< endPoint.z
-		<< ")\n";
+	std::cout << "   End point:         (";
+	PrintPoint(endPoint);
+		
 
-	std::cout << " - Starting point:    ("
-		<< startPoint.x
-		<< ", "
-		<< startPoint.y
-		<< ", "
-		<< startPoint.z
-		<< ")\n";
+	std::cout << " - Starting point:    (";
+	PrintPoint(startPoint);
 
 	std::cout << "--------------------------------\n";
 
-	std::cout << "   Movement vector:   ("
-		<< movementVector.x
-		<< ", "
-		<< movementVector.y
-		<< ", "
-		<< movementVector.z
-		<< ")\n";
+	std::cout << "   Movement vector:   (";
+	PrintVector(movementVector);
 
 }
 
@@ -118,13 +82,8 @@ void FindVectorMagnitudeExample()
 	movementVector = InitVector();
 
 	// Print vector
-	std::cout << "   Movement vector:   ("
-		<< movementVector.x
-		<< ", "
-		<< movementVector.y
-		<< ", "
-		<< movementVector.z
-		<< ")\n";
+	std::cout << "   Movement vector:   (";
+	PrintVector(movementVector);
 
 	// Calculate vector length
 	float vectorLength = movementVector.FindVectorMagnitude();
@@ -148,22 +107,14 @@ void FindLongerVectorExample()
 	Vector vector1 = InitVector();
 	Vector vector2 = InitVector();
 
-	std::cout << "   Vector 1:   ("
-		<< vector1.x
-		<< ", "
-		<< vector1.y
-		<< ", "
-		<< vector1.z
-		<< ")\n";
+	std::cout << "   Vector 1:   (";
+	PrintVector(vector1);
+
 	std::cout << "   Vector 1 mag: " << vector1.FindVectorMagnitude()
 		<< "\n";
-	std::cout << "   Vector 2:   ("
-		<< vector2.x
-		<< ", "
-		<< vector2.y
-		<< ", "
-		<< vector2.z
-		<< ")\n";
+	std::cout << "   Vector 2:   (";
+	PrintVector(vector2);
+
 	std::cout << "   Vector 2 mag: " << vector2.FindVectorMagnitude()
 		<< "\n";
 
