@@ -16,31 +16,16 @@ void CharacterMovementExample()
 
 	// Print equation
 	std::cout << "Example 1: Basic Movement\n";
-	std::cout << "   Starting point:    ("
-		<< startPoint.x
-		<< ", "
-		<< startPoint.y
-		<< ", "
-		<< startPoint.z
-		<< ")\n";
+	std::cout << "   Starting point:    (";
+	PrintPoint(startPoint);
 
-	std::cout << " + Movement vector:   ("
-		<< movementVector.x
-		<< ", "
-		<< movementVector.y
-		<< ", "
-		<< movementVector.z
-		<< ")\n";
+	std::cout << " + Movement vector:   (";
+	PrintVector(movementVector);
 
 	std::cout << "--------------------------------\n";
 
-	std::cout << "   End point:         ("
-		<< endPoint.x
-		<< ", "
-		<< endPoint.y
-		<< ", "
-		<< endPoint.z
-		<< ")\n";
+	std::cout << "   End point:         (";
+	PrintPoint(endPoint);
 }
 
 void FindMovementVectorExample()
@@ -109,12 +94,11 @@ void FindLongerVectorExample()
 
 	std::cout << "   Vector 1:   (";
 	PrintVector(vector1);
-
 	std::cout << "   Vector 1 mag: " << vector1.FindVectorMagnitude()
 		<< "\n";
+
 	std::cout << "   Vector 2:   (";
 	PrintVector(vector2);
-
 	std::cout << "   Vector 2 mag: " << vector2.FindVectorMagnitude()
 		<< "\n";
 
