@@ -14,5 +14,6 @@ int main()
 	FindLongerVectorExample();
 	FindShorterVectorExample();
 	ScaleVectorExample();
+	NormalizeExample();
 
 }

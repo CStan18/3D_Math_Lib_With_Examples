@@ -17,6 +17,7 @@ public:
 	// Scales vector by input
 	void ScaleVector(float scaleVal);
 
+	Vector Normalize();
 };
 
 // 3D point

@@ -31,6 +31,7 @@ Point InitPoint()
 	point.x = std::rand() % 10;
 	point.y = std::rand() % 10;
 	point.z = std::rand() % 10;
+
 	return point;
 }
 
@@ -41,6 +42,7 @@ Vector InitVector()
 	vector.x = std::rand() % 10;
 	vector.y = std::rand() % 10;
 	vector.z = std::rand() % 10;
+
 	return vector;
 }
 
@@ -92,16 +94,6 @@ bool Vector::IsEqual(Vector otherVector)
 	return false;
 }
 
-// Scales vector by input
-void Vector::ScaleVector(float scaleVal)
-{
-	this->x = x * scaleVal;
-	this->y = y * scaleVal;
-	this->z = z * scaleVal;
-}
-
-
-
 // Compares two vector arguments
 // Returns longest
 Vector CompareFindLongerVect(Vector vector1, Vector vector2)
@@ -144,6 +136,28 @@ Vector CompareFindShorterVect(Vector vector1, Vector vector2)
 	return Vector();
 }
 
+// Scales vector by input
+void Vector::ScaleVector(float scaleVal)
+{
+	this->x = x * scaleVal;
+	this->y = y * scaleVal;
+	this->z = z * scaleVal;
+}
+
+Vector Vector::Normalize()
+{
+	Vector normanlizedVect{};
+	float vectMag = this->FindVectorMagnitude();
+
+	if (vectMag > 0)
+	{
+		normanlizedVect.x = this->x / vectMag;
+		normanlizedVect.y = this->y / vectMag;
+		normanlizedVect.z = this->z / vectMag;
+	}
+	
+	return normanlizedVect;
+}
 
 
 

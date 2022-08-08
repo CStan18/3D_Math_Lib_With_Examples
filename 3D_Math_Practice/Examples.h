@@ -6,4 +6,5 @@ void FindVectorMagnitudeExample();
 void FindLongerVectorExample();
 void FindShorterVectorExample();
 void ScaleVectorExample();
+void NormalizeExample();
 

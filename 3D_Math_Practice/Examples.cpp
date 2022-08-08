@@ -173,4 +173,16 @@ void ScaleVectorExample()
 
 }
 
+void NormalizeExample()
+{
+	std::cout << "\nExample 7: Normalizing vector\n";
+	std::cout << "   Vector:   (";
+	PrintVector(vector1);
+	std::cout << "/ by magnitude: " << vector1.FindVectorMagnitude() << "\n";
+	vector1 = vector1.Normalize();
+	std::cout << "Normalized: (";
+	PrintVector(vector1);
+	std::cout << "Length should now be 1: " << vector1.FindVectorMagnitude() << "\n";
+}
+
 
