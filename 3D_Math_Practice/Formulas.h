@@ -14,9 +14,10 @@ public:
 	// Returns true if equivalent
 	bool IsEqual(Vector otherVector);
 
-	// Scales vector by input
+	// Scales this vector by input
 	void ScaleVector(float scaleVal);
 
+	// Returns this vector normalized
 	Vector Normalize();
 };
 
