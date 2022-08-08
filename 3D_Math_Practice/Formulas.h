@@ -19,6 +19,7 @@ public:
 
 	// Returns this vector normalized
 	Vector Normalize();
+
 };
 
 // 3D point
@@ -53,3 +54,8 @@ Vector CompareFindLongerVect(Vector vector1, Vector vector2);
 // Input 2 vector arguments
 // Returns shortest vector
 Vector CompareFindShorterVect(Vector vector1, Vector vector2);
+
+// Vector addition
+// Returns vector of sum
+// Used to change direction
+Vector AddVectors(Vector v1, Vector v2);

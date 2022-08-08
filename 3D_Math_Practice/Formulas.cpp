@@ -136,6 +136,18 @@ Vector CompareFindShorterVect(Vector vector1, Vector vector2)
 	return Vector();
 }
 
+// Vector addition
+// Returns vector of sum
+// Used to change direction
+Vector AddVectors(Vector v1, Vector v2)
+{
+	Vector summedVector;
+	summedVector.x = v1.x + v2.x;
+	summedVector.y = v1.y + v2.y;
+	summedVector.z = v1.z + v2.z;
+	return summedVector;
+}
+
 // Scales vector by input
 void Vector::ScaleVector(float scaleVal)
 {
@@ -158,6 +170,8 @@ Vector Vector::Normalize()
 	
 	return normanlizedVect;
 }
+
+
 
 
 

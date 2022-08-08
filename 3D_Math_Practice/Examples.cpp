@@ -185,4 +185,22 @@ void NormalizeExample()
 	std::cout << "Length should now be 1: " << vector1.FindVectorMagnitude() << "\n";
 }
 
+void AddVectorsExample()
+{
+	vector1 = InitVector();
+	vector2 = InitVector();
+
+	std::cout << "\nExample 7: Normalizing vector\n";
+	std::cout << "   Vector 1:   (";
+	PrintVector(vector1);
+	std::cout << " + Vector 2:   (";
+	PrintVector(vector2);
+	std::cout << "--------------------------------\n";
+
+	Vector sumVect = AddVectors(vector1, vector2);
+
+	std::cout << "      Summed:   (";
+	PrintVector(sumVect);
+}
+
 

@@ -15,5 +15,6 @@ int main()
 	FindShorterVectorExample();
 	ScaleVectorExample();
 	NormalizeExample();
+	AddVectorsExample();
 
 }
