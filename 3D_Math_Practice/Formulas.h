@@ -14,6 +14,9 @@ public:
 	// Returns true if equivalent
 	bool IsEqual(Vector otherVector);
 
+	// Scales vector by input
+	void ScaleVector(float scaleVal);
+
 };
 
 // 3D point

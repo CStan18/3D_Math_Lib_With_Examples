@@ -13,5 +13,6 @@ int main()
 	FindVectorMagnitudeExample();
 	FindLongerVectorExample();
 	FindShorterVectorExample();
+	ScaleVectorExample();
 
 }

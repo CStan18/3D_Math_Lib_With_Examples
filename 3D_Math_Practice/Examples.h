@@ -5,4 +5,5 @@ void FindMovementVectorExample();
 void FindVectorMagnitudeExample();
 void FindLongerVectorExample();
 void FindShorterVectorExample();
+void ScaleVectorExample();
 

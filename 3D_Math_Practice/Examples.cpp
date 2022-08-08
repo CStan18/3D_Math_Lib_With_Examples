@@ -2,6 +2,10 @@
 #include "Examples.h"
 #include "Formulas.h"
 
+Vector vector1 = InitVector();
+Vector vector2 = InitVector();
+
+
 void CharacterMovementExample()
 {
 	// Init point and vector
@@ -152,3 +156,21 @@ void FindShorterVectorExample()
 		std::cout << "Vector 2 has less magnitude\n";
 	}
 }
+
+void ScaleVectorExample()
+{
+	float scaleVal = std::rand() % 5;
+
+	std::cout << "\nExample 6: Scaling vector\n";
+	std::cout << "   Vector 1:   (";
+	PrintVector(vector1);
+	std::cout << " * Scale value: " << scaleVal << "\n";
+	std::cout << "--------------------------------\n";
+	vector1.ScaleVector(scaleVal);
+
+	std::cout << "  Vector 1 Scaled: (";
+	PrintVector(vector1);
+
+}
+
+

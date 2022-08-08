@@ -92,6 +92,14 @@ bool Vector::IsEqual(Vector otherVector)
 	return false;
 }
 
+// Scales vector by input
+void Vector::ScaleVector(float scaleVal)
+{
+	this->x = x * scaleVal;
+	this->y = y * scaleVal;
+	this->z = z * scaleVal;
+}
+
 
 
 // Compares two vector arguments
